@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     body {
-      background-image: url(photo3.jpg);
+      background-image: url(images/photo3.jpg);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -26,7 +26,7 @@
 <body class="text-gray-800">
 
 
-  <nav class="flex justify-between items-center p-4 shadow-md bg-white bg-opacity-90">
+  <nav class="flex justify-between items-center p-4 bg-opacity-90 fixed top-0 w-full z-50 text-black">
     <div class="text-2xl font-bold">Michael</div>
     <div class="space-x-6">
       <a href="index.html">Home</a>
@@ -35,27 +35,111 @@
       <a href="contact.html">Contact</a>
     </div>
   </nav>
-
-  
+  <br>
+  <br>
   <section class="max-w-4xl mx-auto p-6 mt-10 bg-overlay rounded-lg shadow-lg">
     <h1 class="text-4xl font-bold mb-4 text-center">About Me</h1>
     <p class="text-lg leading-relaxed text-center">
       Hey! I'm <span class="font-semibold">Michael</span>, a passionate photographer who thrives on capturing life's rawest and most beautiful moments.My favorite photos to take are mostly portraits, I aim to tell visual stories that leave a lasting impact. Using my Sony Alpha a7 IV mirrorless digital camera with 28-70mm lens, I see the world differently and I'm here to share that vision with you.
     </p>
   </section>
+
+  <section class="max-w-4xl mx-auto p-6 mt-10 bg-overlay rounded-lg shadow-lg">
+  <h2 class="text-2xl font-bold mb-4 text-center">My Photography Gear</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="text-center">
+      <img src="images/cameramani.jpeg" alt="Camera" class="rounded shadow-md mx-auto w-40 h-40 object-cover">
+      <p class="mt-2 font-semibold">Sony Alpha a7 IV</p>
+    </div>
+    <div class="text-center">
+      <img src="images/lens.jpg.jpg" alt="Lens" class="rounded shadow-md mx-auto w-40 h-40 object-cover">
+      <p class="mt-2 font-semibold">28-70mm Lens</p>
+    </div>
+    <div class="text-center">
+      <img src="images/editing.jpg" alt="Editing Setup" class="rounded shadow-md mx-auto w-40 h-40 object-cover">
+      <p class="mt-2 font-semibold">Lightroom & Photoshop</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-white bg-opacity-90 text-gray-800 py-12 px-6 mt-10 rounded-lg shadow-lg max-w-6xl mx-auto">
+  <h2 class="text-3xl font-bold text-center mb-10">What My Clients Say</h2>
+
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="bg-gray-100 p-6 rounded-xl shadow-md">
+      <p class="text-lg italic mb-4">"Michael's eye for detail is unmatched. The photos he took of my birthday were pure magic."</p>
+      <div class="font-bold text-right"> Aisha.</div>
+    </div>
+    <div class="bg-gray-100 p-6 rounded-xl shadow-md">
+      <p class="text-lg italic mb-4">"Professional, creative, and easy to work with. My brand shoot turned out amazing."</p>
+      <div class="font-bold text-right"> Fuvu.</div>
+    </div>
+    <div class="bg-gray-100 p-6 rounded-xl shadow-md">
+      <p class="text-lg italic mb-4">"Captured my portraits so beautifully. You can literally feel the story behind each photo."</p>
+      <div class="font-bold text-right"> Arriana.</div>
+    </div>
+  </div>
+</section>\
+
+<section class="max-w-5xl mx-auto p-6 mt-16 bg-white bg-opacity-90 rounded-lg shadow-xl">
+  <h2 class="text-3xl font-bold mb-6 text-center">Pricing</h2>
+  <div class="grid md:grid-cols-3 gap-8 text-center">
+
+    <div class="p-6 border border-gray-300 rounded-lg shadow-md bg-gray-50 hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-4">Basic</h3>
+      <p class="text-4xl font-bold mb-4">Ksh 3,000</p>
+      <ul class="mb-6 text-sm">
+        <li>• 1 Hour Session</li>
+        <li>• 5 Edited Photos</li>
+        <li>• Digital Delivery</li>
+        <br>
+      </ul>
+     <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block text-center">
+  Book Now
+</a>
+    </div>
+
+    <div class="p-6 border border-gray-300 rounded-lg shadow-md bg-gray-50 hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-4">Standard</h3>
+      <p class="text-4xl font-bold mb-4">Ksh 5,000</p>
+      <ul class="mb-6 text-sm">
+        <li>• 2 Hour Session</li>
+        <li>• 10 Edited Photos</li>
+        <li>• 1 Location of Choice</li>
+        <li>• Digital Delivery</li>
+      </ul>
+     <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block text-center">
+  Book Now
+</a>
+    </div>
+
+    <div class="p-6 border border-gray-300 rounded-lg shadow-md bg-gray-50 hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-4">Premium</h3>
+      <p class="text-4xl font-bold mb-4">Ksh 8,000</p>
+      <ul class="mb-6 text-sm">
+        <li>• 3 Hour Session</li>
+        <li>• 20+ Edited Photos</li>
+        <li>• 2 Locations</li>
+        <li>• Prints & Digital Copy</li>
+      </ul>
+      <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded inline-block text-center">
+  Book Now
+</a>
+    </div>
+  </div>
+</section>
+
+
   <br>
   <br>
   <br>
   <br>
-  <br>
-  <br>
-  <br>
-  <br>
+
   <footer class="bg-black bg-opacity-70 text-white text-center py-4">
     <p class="mb-2">© 2025 Michael Photography | Nairobi, Kenya.</p>
     <a href="https://instagram.com/nifuvu" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png"
-        alt="Instagram" class="w-6 h-6 inline-block" />
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png"alt="Instagram" class="w-6 h-6 inline-block" />
     </a>
   </footer>
 

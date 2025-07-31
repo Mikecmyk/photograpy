@@ -3,64 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact - Photography</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Manufacturing+Consent&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <title>Book Me - Photography</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-     a:hover {
-      color: #2563eb;
-    }
     body {
-    font-family: "Merriweather", serif;  
+      font-family: 'Merriweather', serif;
     }
   </style>
 </head>
-<body class="bg-cover bg-center min-h-screen" style="background-image: url(photo6.jpg)">
-
-  <nav class="flex justify-between items-center p-4 bg-black shadow-md bg-white">
-    <h1 class="text-2xl font-bold">Michael</h1>
+<body class="bg-cover bg-center min-h-screen" style="background-image: url('images/photo16.jpg');">
+ 
+  <nav class="flex justify-between items-center p-4  bg-opacity-90 fixed top-0 w-full z-50 text-black">
+    <h1 class="text-3xl font-bold">Michael</h1>
     <ul class="flex space-x-6">
-      <li><a href="index.html" class="hover:underline">Home</a></li>
-      <li><a href="about.html" class="hover:underline">About</a></li>
-      <li><a href="gallery.html" class="hover:underline">Gallery</a></li>
-      <li><a href="contact.html" class="underline">Contact</a></li>
+      <li><a href="index.html" class="hover:underline text-2xl">Home</a></li>
+      <li><a href="about.html" class="hover:underline text-2xl">About</a></li>
+      <li><a href="gallery.html" class="hover:underline text-2xl">Gallery</a></li>
+      <li><a href="contact.html" class="underline text-2xl">Book Me</a></li>
     </ul>
   </nav>
 
-  <div class="flex items-center justify-center min-h-[80vh] px-4">
-    <form class="bg-white bg-opacity-90 p-8 rounded-xl shadow-md w-full max-w-lg space-y-4">
-      <h2 class="text-2xl font-bold text-center text-black mb-4">Get In Touch</h2>
+  <div class="flex items-center justify-center min-h-[80vh] px-4 pt-24">
+    <form id="bookingForm" class="bg-white bg-opacity-90 p-8 rounded-xl shadow-md w-full max-w-lg space-y-4">
+      <h2 class="text-2xl font-bold text-center text-black mb-4">Book Me Now</h2>
 
       <input
         type="text"
+        id="name"
         placeholder="Your Name"
         class="w-full p-3 rounded border border-gray-300 text-black"
-        required
       />
 
       <input
         type="email"
+        id="email"
         placeholder="Your Email"
         class="w-full p-3 rounded border border-gray-300 text-black"
-        required
       />
 
       <textarea
+        id="message"
         rows="4"
-        placeholder="Your Message"
+        placeholder="Tell me about the shoot..."
         class="w-full p-3 rounded border border-gray-300 text-black"
-        required
       ></textarea>
 
       <button
-        type="submit"
+        type="button"
+        onclick="validateBooking()"
         class="w-full bg-black text-white py-3 rounded hover:bg-gray-800 transition"
       >
-        Send Message
+        Book Me Now
       </button>
     </form>
   </div>
+  <br>
+  <br>
 
   <footer class="bg-black bg-opacity-70 text-white text-center py-4">
     <p class="mb-2">© 2025 Michael Photography | Nairobi, Kenya.</p>
@@ -70,5 +68,18 @@
     </a>
   </footer>
 
+  <script>
+    function validateBooking() {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (!name || !email || !message) {
+        alert("Sorry, you haven’t filled anything above.");
+      } else {
+        alert("Thank you! Your booking request has been received.");
+      }
+    }
+  </script>
 </body>
 </html>

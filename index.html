@@ -6,7 +6,7 @@
   <title>Michael's Photography</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Manufacturing+Consent&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <style>
     body {
@@ -20,23 +20,43 @@
     }
   </style>
 </head>
-<body class="text-white">
+<body class="text-white pt-16">
 
-  <nav class="flex justify-between items-center p-4 shadow-md bg-white bg-opacity-90 fixed top-0 w-full z-50 text-black">
+
+  <nav class="flex justify-between items-center p-4  bg-opacity-90 fixed top-0 w-full z-50 text-black">
     <div class="text-2xl font-bold">Michael</div>
     <div class="space-x-6">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html" class="hover:text-blue-600 font-medium">Home</a>
+      <a href="about.html" class="hover:text-blue-600 font-medium">About</a>
+      <a href="gallery.html" class="hover:text-blue-600 font-medium">Gallery</a>
+      <a href="contact.html" class="hover:text-blue-600 font-medium">Contact</a>
     </div>
   </nav>
 
-  <section class="h-screen bg-cover bg-center flex items-center justify-center text-center relative" style="background-image: url('photo6.jpg');">
+  <section class="h-screen bg-cover bg-center flex items-center justify-center text-center relative" style="background-image: url('images/photo6.jpg');">
     <div class="absolute inset-0 bg-black bg-opacity-50"></div>
     <h1 class="relative z-10 text-4xl md:text-6xl font-bold px-4">
       Welcome to My Photography World
     </h1>
+  </section>
+
+  <section class="bg-white text-black text-center py-12 px-6">
+    <h2 class="text-3xl font-bold mb-4">Capturing Life One Click at a Time</h2>
+    <p class="max-w-2xl mx-auto text-lg">
+      I'm Michael, a Nairobi based photographer who tells stories through pictures. Portraits, nature, street vibes  I do it all with heart and a lens.
+    </p>
+  </section>
+
+  <section class="bg-gray-100 text-black py-10 px-4">
+    <h2 class="text-2xl font-bold text-center mb-6">Featured Shots</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
+      <img src="images/photo1.jpg" class="rounded-lg shadow-md">
+      <img src="images/photo23.jpg" class="rounded-lg shadow-md">
+      <img src="images/photo10.jpg" class="rounded-lg shadow-md">
+    </div>
+    <div class="text-center mt-6">
+      <a href="gallery.html" class="inline-block bg-black text-white px-6 py-2 rounded hover:bg-gray-800 transition">View Full Gallery</a>
+    </div>
   </section>
 
   <footer class="bg-black bg-opacity-70 text-white text-center py-4">
